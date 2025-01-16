@@ -28,6 +28,7 @@ st.markdown(
 st.title("🌍 Dashboard de Emissões Industriais")
 
 # Dados fictícios para demonstração
+st.cache_data
 def load_data():
     data = {
         'Mês': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
