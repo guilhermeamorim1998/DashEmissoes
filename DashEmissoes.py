@@ -28,15 +28,14 @@ st.markdown(
 st.title("🌍 Dashboard de Emissões Industriais")
 
 # Dados fictícios para demonstração
-#st.cache_data
-#def load_data():
+def load_data():
     data = {
         'Mês': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         'CO2 (ton)': [1200, 1100, 950, 1300, 1250, 1400, 1350, 1500, 1450, 1600, 1550, 1700],
         'CH4 (ton)': [300, 280, 250, 320, 310, 330, 340, 350, 345, 360, 355, 380],
         'N2O (ton)': [150, 145, 140, 160, 155, 165, 170, 175, 180, 185, 190, 200]
     }
-    #return pd.DataFrame(data)
+    return pd.DataFrame(data)
 
 # Carregar os dados
 df = load_data()
